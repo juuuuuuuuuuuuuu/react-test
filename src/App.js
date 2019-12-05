@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Counter from './components/Counter';
 import NameForm from './components/NameForm';
 import NameList from './components/NameList';
-
+import UnControlledComponent from './components/base/UnControlledComponent';
 class App extends Component {
   state = {
     names: ['벨로퍼트', '김민준']
@@ -23,6 +23,9 @@ class App extends Component {
         <h1>이름 목록</h1>
         <NameForm onInsert={onInsert}/>
         <NameList names={names}/>
+        <br/>
+        <br/>
+        <UnControlledComponent/>
       </div>
     );
   }
